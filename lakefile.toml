@@ -1,0 +1,14 @@
+name = "PaPCinLean"
+version = "0.1.0"
+defaultTargets = ["PaPCinLean", "papcinlean"]
+
+# The globs build the root module and every file under `PaPCinLean/`,
+# including `Starting.lean`, which is not imported anywhere (it defines the
+# same names as `StartingSolved.lean`, so the two cannot be imported together).
+[[lean_lib]]
+name = "PaPCinLean"
+globs = ["PaPCinLean", "PaPCinLean.*"]
+
+[[lean_exe]]
+name = "papcinlean"
+root = "Main"
