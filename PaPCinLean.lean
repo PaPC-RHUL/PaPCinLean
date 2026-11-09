@@ -4,3 +4,5 @@
 import PaPCinLean.Starting
 import PaPCinLean.HelloWorld
 import PaPCinLean.Interlude
+import PaPCinLean.InsertSort
+import PaPCinLean.MergeSort
